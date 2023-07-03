@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inzamam - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+body {
+    background-color: rgb(1, 1, 29);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(3, 3, 45);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(204, 165, 241);
+    font-size: 1.02rem;
+}
+
+main hr {
+    border: 0;
+    background: rgb(221, 53, 53);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.firstSection > div {
+   width: 40%;
+}
+
+.leftSection {
+    font-size: 3rem;
+   
+}
+
+.rightSection img {
+    width: 70%;
+    height: 75%;
+    margin: 50px 0;
+}
+
+.purpal {
+    color: rgb(184, 134, 230);
+}
+
+#element {
+    color: rgb(184, 134, 230);
+}
+
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 100vh;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+    
+}
+
+.secondSection hr {
+    border: 0;
+    background: rgb(221, 53, 53);
+    height: 1.5px;
+    margin: 6px 1px;
+    width: 12vw;
+}
+
+.about_me p {
+    font-size: 20px;
+}
+
+.Resume_button {
+    border: 1px solid rgb(86, 202, 202);
+    font-size: 20px;
+    padding: 10px 20px;
+    color: rgb(86, 202, 202);
+    background-color: rgb(3, 3, 45) ;
+}
+
+.about_me hr {
+    border: 0;
+    background: rgb(221, 53, 53);
+    height: 1.2px;
+    width: 82vw;
+    margin-top: 70px;
+    
+}
+
+.third_section{
+    max-width: 80vw;
+    margin: auto;
+    height: 90vh;
+}
+
+.third_section hr {
+    border: 0;
+    background: rgb(221, 53, 53);
+    height: 1.5px;
+    margin: 6px 1px;
+    width: 8vw;
+}
+
+.Skill_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 40px;
+}
+
+.html_logo {
+    border: 2px solid rgb(86, 202, 202) ;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 150px;
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.html_logo img {
+    height: 100px;
+}
+
+.css_logo {
+    border: 2px solid rgb(86, 202, 202) ;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 150px;
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.css_logo img {
+    height: 100px;
+}
+.css_logo h1 {
+    padding-left: 20px;
+}
+
+.java_logo{
+    border: 2px solid rgb(86, 202, 202) ;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 150px;
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.java_logo img{
+    height: 100px;
+}
+.java_logo h1 {
+    padding-left: 32px;
+}
+
+.react_logo{
+    border: 2px solid rgb(86, 202, 202) ;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 150px;
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.react_logo img {
+    height: 100px;
+}
+.react_logo h1{
+    padding-left: 10px;
+}
+
+.redux_logo{
+    border: 2px solid rgb(86, 202, 202) ;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 150px;
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.redux_logo img{
+    height: 100px;
+}
+.redux_logo h1{
+    padding-left: 10px;
+}
+
+.mui_logo{
+    border: 2px solid rgb(86, 202, 202) ;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 150px;
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.mui_logo img {
+    height: 100px;
+}
+.mui_logo h1 {
+    padding-left: 22px;
+}
+
+.git_logo {
+    border: 2px solid rgb(86, 202, 202) ;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 150px;
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.git_logo img{
+    height: 100px;
+}
+.git_logo h1{
+    padding-left: 13px;
+}
+
+.fourth_section {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.fourth_section hr {
+    border: 0;
+    background: rgb(221, 53, 53);
+    height: 1.7px;
+    margin: 6px 1px;
+    width: 9vw;
+}
+.fourth_section h1{
+    margin-top: 20px;
+}
+.fourth_section ul {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.fourth_section h2{
+    margin-top: 20px;
+}
+.first_list hr {
+    width: 18vw;
+}
+.first_unorder hr{
+    width: 9vw;
+}
+.first_projectlist hr {
+    width: 6vw;
+}
+.first_gitlink {
+    display: flex;
+    flex-direction: row;
+}
+.first_gitlink a {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.first_deplink{
+    display: flex;
+    flex-direction: row;
+}
+.first_deplink img {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.first_deplink a {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.second_list hr {
+    width: 22vw;
+}
+.second_list h1 {
+    margin-top: 40px;
+}
+.second_unorder hr {
+    width: 9vw;
+}
+.second_projectlist hr {
+    width: 6vw;
+}
+
+.Third_list h1 {
+    margin-top: 40px;
+
+}
+.Third_list hr {
+    width: 24vw
+}
+.third_unorder hr{
+    width: 9vw
+}
+.third_projectlist hr {
+    width: 6vw;
+}
+.project_break hr{
+    width: 80vw;
+    margin-top: 50px;
+    height: 1.2px;
+}
+
+.fifth_section {
+    max-width: 80vw;
+    margin: auto;
+    height: 120vh;
+}
+.fifth_section h1 {
+    font-size: 25px;
+}
+.fifth_section hr {
+    width: 12vw;
+}
+.fifth_section p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.contact_line hr {
+    width: 7vw;
+}
+.first_details {
+    display: flex;
+    flex-direction: row;
+}
+.first_details img {
+    width: 50px;
+    margin-top: 20px;
+}
+.first_details h3 {
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.Last_details {
+    display: flex;
+    flex-direction: row;
+}
+.Last_details img {
+    margin-top: 10px;
+}
+.Last_details a {
+    color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.link_details {
+    display: flex;
+    flex-direction: row;
+}
+.link_details img {
+    width: 48px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.link_details a {
+    color: white;
+    margin-top: 20px;
+    margin-left: 19px;
+}
+.footer_section {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(3, 3, 45);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Inzamam Ull Azeez - Portfolio!</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purpal">Inzamam Ull Azeez</span> 
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="Profile.png.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>About Me.</h1>
+            <hr>
+            <div class="about_me">
+                &nbsp;
+               <p>Welcome to my portfolio website! I'm a dedicated front-end developer with expertise in HTML, CSS, JavaScript, React, and Redux. I completed an intensive front-end development training program at Function Up, where I gained proficiency in modern web technologies and best practices. Through coding projects and practical exercises, I developed dynamic web applications and showcased my problem-solving skills. I adapt quickly to evolving industry trends and technologies.</p> 
+               &nbsp;
+               <p>Before transitioning into web development, I worked as a Service Engineer at Maniranjan Diesel Sales & Service Pvt. Ltd. During my time there, I received comprehensive training in Cummins India Limited, specializing in the maintenance and troubleshooting of High Horsepower (HHP) engines. I successfully serviced generators, construction equipment, and railway engines using tools like In-power and Insight software.</p>
+               &nbsp;
+               <p>In addition to my technical skills, I possess strong leadership abilities, effective problem-solving capabilities, and a collaborative mindset. I excel at working in teams, communicating openly, and managing time effectively to ensure project delivery. I am eager to leverage my expertise and soft skills to contribute to the success of your organization.</p>
+               &nbsp;
+               <p>Thank you for visiting my portfolio website, and I look forward to exploring potential collaborations or opportunities with you!</p>
+               &nbsp;
+               <div>
+                <a href="Resume.png" class="Resume_button" >Resume...</a>
+               </div> 
+            </section>
+        <hr>
+        <section class="third_section">
+                <h1>Skills.</h1>
+                <hr>
+                <div class="Skill_container">
+                    <div class="html_logo">
+                       <img src="html-5 (1).png" alt="">
+                       <h1>HTML</h1>
+                    </div>
+                    <div class="css_logo">
+                        <img src="css-logo-100.png" alt="">
+                        <h1>CSS</h1>
+                    </div>
+                    <div class="java_logo">
+                        <img src="java-script.png" alt="">
+                        <h1>JS</h1>
+                    </div>
+                    <div class="react_logo">
+                        <img src="physics.png" alt="">
+                        <h1>REACT</h1>
+                    </div>
+                    <div class="redux_logo">
+                        <img src="icons8-redux-48.png" alt="">
+                        <h1>REDUX</h1>
+                    </div>
+                    <div class="mui_logo">
+                        <img src="MUI logo.png" alt="">
+                        <h1>MUI</h1>
+                    </div>
+                    <div class="git_logo">
+                        <img src="icons8-github-48.png" alt="">
+                        <h1>GitHub</h1>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="fourth_section">
+                <h1>Projects.</h1>
+                <hr>
+                <div class="first_list">
+                    <h1>1. Kanban Project</h1>
+                    <hr>
+                    <ul class="first_unorder">
+                        <li>The proposed project aims to develop a Kanban Board using the React Library to help students manage their tasks and assignments efficiently. The Kanban Board will be a visual tool that provides a clear picture of the status of each task by visualizing the workflow. The main goal of this project is to help individuals or teams organize their work , track progress and collaborate accordingly .</li>
+                        &nbsp;
+                        <li>Skills Used :  CSS, React, React router-dom and Redux. </li>
+                        <hr>
+                        &nbsp;
+                        <li>A collaborative project built by a team of 3, executed in 5 days.</li>
+                    </ul>
+                    <span class="first_projectlist">
+                    <h2>Links:</h2>
+                    <hr>
+                    </span>
+                    <div class="first_gitlink">
+                        <img src="gitlink.png" alt="">
+                        <a href="https://github.com/Inzamamazeez/Kanban-Project/tree/Progress">Git link..</a>
+                    </div>
+                    <div class="first_deplink">
+                        <img src="icons8-deployment-48.png" alt="">
+                        <a href="https://kanban-board-clone-project-grp-15.vercel.app/">Deployment link..</a>
+                    </div>
+                </div>
+                <div class="second_list">
+                    <h1>2. Twitter-clone Project</h1>
+                    <hr>
+                    <ul class="second_unorder">
+                        <li>To develop a functional twitter clone application that mimics the core features and functionality of the original platform, providing users with similar experience in terms of posting tweets, following other users, while incorporating modern design principles and responsive web development techniques.</li>
+                        &nbsp;
+                        <li>Skills Used :  CSS, React, React router-dom and Redux. </li>
+                        <hr>
+                        &nbsp;
+                        <li>A collaborative project built by a team of 4, executed in 5 days.</li>
+                    </ul>
+                    <span class="second_projectlist">
+                    <h2>Links:</h2>
+                    <hr>
+                    </span>
+                    <div class="first_gitlink">
+                        <img src="gitlink.png" alt="">
+                        <a href="https://github.com/Inzamamazeez/Twitter-Clone-Project/tree/progress">Git link..</a>
+                    </div>
+                    <div class="first_deplink">
+                        <img src="icons8-deployment-48.png" alt="">
+                        <a href="https://ttweeterr.netlify.app/">Deployment link..</a>
+                    </div>
+                </div>
+                <div class="Third_list">
+                    <h1>3. The Siren-blog Project</h1>
+                    <hr>
+                    <ul class="third_unorder">
+                        <li>The Siren Blog is a web application built with React that allows users to explore and read articles related to various topics such as Bollywood, technology, Hollywood, fitness, and food. It utilizes the React Router DOM library for navigation between different sections of the blog.</li>
+                        &nbsp;
+                        <li>Skills Used :  CSS, React, React router-dom and Context API. </li>
+                        <hr>
+                        &nbsp;
+                        <li>A solo project built by me in 7 days.</li>
+                    </ul>
+                    <span class="third_projectlist">
+                    <h2>Links:</h2>
+                    <hr>
+                    </span>
+                    <div class="first_gitlink">
+                        <img src="gitlink.png" alt="">
+                        <a href="https://github.com/Inzamamazeez/The-Siren-blog-project">Git link..</a>
+                    </div>
+                    <div class="first_deplink">
+                        <img src="icons8-deployment-48.png" alt="">
+                        <a href="https://the-siren-blog-project.vercel.app/">Deployment link..</a>
+                    </div>
+                </div>
+               <div class="project_break">
+                <hr>
+               </div>
+               <section class="fifth_section">
+                <h1>Contact Me.</h1>
+                <hr>
+                <p>If you're interested in learning more about me and my work or if you simply want to say hello, feel free to drop me a message. I would be thrilled to connect with you!</p>
+                <span class="contact_line">
+                <h2>Details:</h2>
+                <hr>
+            </span>
+            <div class="first_details">
+                <img src="gmail.png" alt="">
+                <h3>: inzamamazeez014@gmail.com</h3>
+            </div>
+            <div class="first_details">
+                <img src="smartphone.png" alt="">
+                <h3>: 7676076004</h3>
+            </div>
+            <div class="first_details">
+                <img src="location-pin.png" alt="">
+                <h3>: Mysore,Karnataka,India.</h3>
+            </div>
+            <span class="contact_line">
+                <h2>Social:</h2>
+                <hr>
+            </span>
+            <div class="Last_details">
+                <img src="gitlink.png" alt="">
+                <a href="https://github.com/Inzamamazeez ">: Link..</a>
+            </div>
+            <div class="link_details">
+                <img src="linkedin.png" alt="">
+                <a href="https://www.linkedin.com/in/i-u-azeez/">: Link..</a>
+            </div>
+            </section>
+             Thanks for visit..!
+            
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Frontend Developer!...'],
+      typeSpeed: 100,
+    });
+  </script>
+</body>
+</html>       
